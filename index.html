@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOCTOS</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #000; cursor: pointer; }
+  img { display: block; width: 100vw; height: 100vh; object-fit: fill; }
+</style>
+</head>
+<body>
+<img src="DOCTOS.png" alt="">
+<audio id="a" src="DOCTOS_loud.wav" loop></audio>
+<script>
+  const a = document.getElementById('a');
+  addEventListener('click', () => a.paused ? a.play() : a.pause());
+</script>
+</body>
+</html>
